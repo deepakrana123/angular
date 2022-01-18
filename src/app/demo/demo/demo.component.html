@@ -1,0 +1,18 @@
+<div class="card-group" *ngFor="let cat of dataUser">
+    <div class="card">
+      <img src={{cat.images.main}}  class="card-img-top" alt={{cat.images.headshot}}>
+      <div class="card-body">
+          <h5 class="card-title">{{cat.name.first}} {{cat.name.middle}} {{cat.name.last}}</h5>
+        <h5 class="card-title">{{cat.homePlanet}}</h5>
+        <h2 class="card-title">{{cat.age}}</h2>
+        <h1 class="card-title">{{cat.gender}}</h1>
+        <h1 class="card-title">{{cat.occupation}}</h1>
+        <h1 class="card-title">{{cat.species}}</h1>
+        <h5 class="card-text">{{cat.occupation}}</h5>
+        <div class="card-text" *ngFor="let service of cat.sayings">
+            <h4 class="card-text">{{service}}</h4>
+        </div>
+        </div>
+    </div>
+   
+  </div>
